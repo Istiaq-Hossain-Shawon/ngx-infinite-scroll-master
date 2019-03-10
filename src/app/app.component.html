@@ -1,0 +1,22 @@
+
+  <mat-toolbar color="accent">  
+    <span>Istiaq Hossain - Infinite Scroll demo</span>  
+    <span class="demo-toolbar"></span>  
+  </mat-toolbar>  
+    
+  
+  <div class="row" infiniteScroll [infiniteScrollDistance]="2" [infiniteScrollThrottle]="50" (scrolled)="onScroll()" [scrollWindow]="false"
+  style=" height: 400px; overflow-y: scroll;">
+  
+  <div class="col-xs-12 col-sm-6 col-md-4"  *ngFor="let item of myInfoList" style="padding: 10px">
+    <div class="card" >
+      <img class="card-img-top" style="height: 220px;width: 315px;" src="{{item.url}}" />
+      <div class="card-body">
+        <h5 class="card-title">{{item.title}}</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+ 
+</div>
