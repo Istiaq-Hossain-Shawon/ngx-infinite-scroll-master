@@ -2,26 +2,48 @@
 
 In this project you can find source code to learn that how to implement infinite scroll using angular 6 
 
-## Development server
+###### Before Running this Project
+ 1. Install npm packages using 'npm install' command.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Demo
 
-## Code scaffolding
+Visit: https://ngx-infinite-scroll-master.herokuapp.com/
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Installation
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+### What's included
 
-## Running unit tests
+Within the download you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations. You'll see something like this:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Usage
 
-## Running end-to-end tests
+``` bash
+# clone the repo
+$ git clone https://github.com/Istiaq-Hossain-Shawon/ngx-infinite-scroll-master.git
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+# go into app's directory
+$ cd ngx-infinite-scroll-master
 
-## Further help
+# install dependencies
+npm install
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+npm install ngx-infinite-scroll --save  
+
+npm install @angular/cdk  
+
+# serve with hot reload at localhost:4200
+ng serve
+
+# build for production with minification
+ng build
+```
+### Port number 4200 is already in use. Type below command in cmd:
+``` bash
+Step 1: Find the connection’s PID
+> netstat -ano | findstr :yourPortNumber
+Then locate the PID (something like 10764)
+Step 2: Kill the process using it’s PID
+> tskill yourPID
+Step 3: Restart your server
+```
